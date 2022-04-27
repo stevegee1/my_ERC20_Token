@@ -14,6 +14,7 @@ Installation:
         python3 -m pipx ensurepath
         # restart your terminal
         pipx install eth-brownie
+        
         #Or if that doesn't work, use:
             pip install eth-brownie
     Install ganache-cli:
@@ -31,12 +32,20 @@ You can get a WEB3_INFURA_PROJECT_ID by getting a free trial of Infura. At the m
 
 You'll also need testnet rinkeby ETH and Kovan ETH in your wallet
 You can add your environment variables to the .env file:
+
    export WEB3_INFURA_PROJECT_ID=<PROJECT_ID>
+   
    export PRIVATE_KEY=<PRIVATE_KEY>
 
 
 QUICKSTART:
+
+
    Clone this repo
+   
    Run this script in your terminal:
+   
        brownie run scripts/deploy.py (using this command, it deploys on the ganache-cli)
+       
+       
        brownie run scripts/deploy.py --network (kovan/rinkeby/mainnet-fork-dev)
